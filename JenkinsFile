@@ -28,5 +28,5 @@ pipeline {
                 archiveArtifacts artifacts: 'Factorial.jar'
             }
         }
-    }
+}
    
