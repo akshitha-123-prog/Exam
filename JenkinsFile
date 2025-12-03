@@ -25,10 +25,10 @@ pipeline {
 
         stage('Package JAR') {
             steps {
-                echo "Packaging into JAR"
-                bat 'jar cfm Factorial.jar manifest.txt Factorial.class'
-            }
+            bat '"C:\\Program Files\\Java\\jdk-17\\bin\\jar.exe" cfm Factorial.jar manifest.txt Factorial.class'
+           }
         }
+
 
         stage('Archive Artifact') {
             steps {
